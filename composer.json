@@ -1,0 +1,24 @@
+{
+  "name": "newsman/laravel-newsman-smtp",
+  "description": "Laravel mail transport driver for NewsMAN SMTP",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "illuminate/mail": "^10.0|^11.0",
+    "illuminate/support": "^10.0|^11.0",
+    "symfony/mailer": "^6.0|^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Newsman\\LaravelNewsmanSmtp\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Newsman\\LaravelNewsmanSmtp\\NewsmanServiceProvider"
+      ]
+    }
+  }
+}
